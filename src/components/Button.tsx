@@ -6,9 +6,10 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
 
     children: ReactNode;
     asChild?: boolean;
+    className?: string;
 }
 
-export function Button({ children, asChild}:ButtonProps) {
+export function Button({ children, asChild, className}:ButtonProps) {
 
     const Comp = asChild? Slot : 'button';
 
